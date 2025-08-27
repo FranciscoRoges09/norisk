@@ -13,36 +13,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
-  window.addEventListener("load", function() {
-    window.pixelId = "68a03b7207ba3fa84498a661";
-
-    // Carrega pixel.js
-    var pixelScript = document.createElement("script");
-    pixelScript.async = true;
-    pixelScript.defer = true;
-    pixelScript.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
-    document.head.appendChild(pixelScript);
-
-    // Carrega latest.js
-    var latestScript = document.createElement("script");
-    latestScript.async = true;
-    latestScript.defer = true;
-    latestScript.src = "https://cdn.utmify.com.br/scripts/utms/latest.js";
-    latestScript.setAttribute("data-utmify-prevent-xcod-sck", "");
-    latestScript.setAttribute("data-utmify-prevent-subids", "");
-    document.head.appendChild(latestScript);
-
-    // Inicializa quando latest.js estiver pronto
-    latestScript.onload = function() {
-      if (window.Utmify && window.Utmify.initPixel) {
-        window.Utmify.initPixel(window.pixelId);
-      } else {
-        console.error("Utmify não está disponível");
-      }
-    };
-  });
+  window.pixelId = "68a03b7207ba3fa84498a661";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
 </script>
-
 <script src="/js/utmifyPixel.js"></script>
 
   <!-- Swiper -->
