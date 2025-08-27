@@ -7,6 +7,31 @@
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Pixel da UTMify -->
+<script>
+  window.pixelId = "68a03b7207ba3fa84498a661";
+  var a = document.createElement("script");
+  a.async = true;
+  a.defer = true;
+  a.src = "https://cdn.utmify.com.br/scripts/pixel/pixel.js";
+  document.head.appendChild(a);
+
+  // Esperar DOM carregado antes de inicializar
+  document.addEventListener("DOMContentLoaded", function() {
+    if (window.Utmify) {
+      window.Utmify.initPixel && window.Utmify.initPixel(window.pixelId);
+    }
+  });
+</script>
+
+<script
+  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
+  data-utmify-prevent-xcod-sck
+  data-utmify-prevent-subids
+  async
+  defer
+></script>
+
   <!-- Swiper -->
   <link rel="stylesheet" href="css/swiper-bundle.min.css">
   <script src="js/swiper-bundle.min.js"></script>
